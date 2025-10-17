@@ -23,7 +23,7 @@ Each element includes a `data-testid` attribute for automated testing, ensuring 
 
 ## Live Demo
 
-**Live Preview:** [View on Netlify](https://your-live-link.netlify.app)  
+**Live Preview:** [View on Netlify](https://hngtask1-profilecard.netlify.app/)  
  **Repository:** [GitHub Repo](https://github.com/Cynthie-Abah/HNG-stage-1-task.git)
 
 ---
