@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  /* font-family: --- i am yet to choose my own fonts  */
+  background: linear-gradient(135deg, #e1e1e1, #d7d7ee);
+}
+.hero {
+  width: 100%;
+  padding: 1.2rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.profile-card {
+    max-width: 900px;
+  min-height: auto;
+  background: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+.avatar {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.edit-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #ff0;
+  color: #000;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.edit-icon:hover {
+  transform: scale(1.1);
+}
+.info {
+  text-align: center;
+}
+.name {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  /* font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bio {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+   font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.time-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+}
+.time {
+  background: #222222;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+.socials {
+  list-style: none;
+  padding: .4rem;
+  background: #ff0;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+.socials li {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: flex;
+  gap: 0.4rem;
+  align-items: end;
+}
+.socials li:hover {
+  transform: translateY(-2px);
+  color: #555;
+}
+.socials li a {
+  color: inherit;
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  font-family: "monospace", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+section ul {
+font-family: "Share Tech Mono", monospace;
+font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+section ul li {
+  background: #222;
+  padding: .4rem .9rem;
+  border-radius: 5rem;
+  color: #ff0;
+  border: #ff0 1px solid;
+  text-transform: capitalize;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+section ul li:hover {
+  transform: translateY(-2px);
+    color: #555;
+    background: #ff0;
+}
+
+@media (min-width: 668px) {
+  .profile-card {
+    gap: 2rem;
+  }
+  .avatar {
+    flex-shrink: 0;
+    height: 380px;
+  }
+  .info {
+    text-align: left;
+  }
+}
+
+@media (min-width: 968px) {
+.info-box{
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.avatar {
+  width: 400px;
+  height: 250px;
+}
+.info {
+  text-align: left;
+}
+.name {
+  font-size: 1.5rem;
+}
+.bio {
+  font-size: 1rem;
+}
+.time-box{
+    font-size: 1.2rem;
+}
+.time {
+  padding: 0.5rem 1rem;
+}
+.socials {
+  padding: 0.5rem 1rem;
+}
+section {
+  margin-bottom: 0.1rem;
+}
+}
