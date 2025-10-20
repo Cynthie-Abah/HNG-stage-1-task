@@ -1,22 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-  /* font-family: --- i am yet to choose my own fonts  */
-  background: linear-gradient(135deg, #e1e1e1, #d7d7ee);
-}
 .hero {
   width: 100%;
   padding: 1.2rem;
+  padding-top: .5rem;
     display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .profile-card {
-    max-width: 900px;
+   max-width: 1000px;
   min-height: auto;
   background: #000;
   color: #fff;
@@ -72,7 +64,7 @@ body {
 .info {
   text-align: center;
 }
-.name {
+.info .name {
   font-size: 1.3rem;
   letter-spacing: 2px;
   font-weight: 700;

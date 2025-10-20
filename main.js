@@ -1,23 +1,17 @@
-// TIMER 
-const timeDiv = document.getElementById("time");
-setInterval(()=>{
-    const currentTime = Date.now();
-    timeDiv.textContent = "TIME: " + currentTime;
-}, 1050)
+// SIDEBAR REVEAL
+const hamburger = document.getElementById('hamburger')
+const mobileNavBar = document.getElementById("mobile-nav-div")
+const navDiv = document.querySelector('.mobile-nav-bar');
 
-// AVATAR CHANGE 
-const button = document.querySelector(".edit-icon");
-const avatarInput = document.querySelector(".avatar-input")
-const avatar = document.querySelector(".avatar img");
+hamburger.addEventListener('click', ()=> {
+    if(mobileNavBar.style.display === "block"){
+        mobileNavBar.style.display = "none"
+        navDiv.classList.remove('mobile-nav-style')
+        hamburger.innerHTML = `<i class="fa-solid fa-bars"></i>`
 
-button.addEventListener("click", ()=>{
-    avatarInput.click()
-})
-
-avatarInput.addEventListener("change", (event)=>{
-    const file = event.target.files[0];
-    if(file){
-        const url = URL.createObjectURL(file);
-        avatar.src = url;
+    } else {
+        mobileNavBar.style.display = "block"
+        navDiv.classList.add('mobile-nav-style')
+        hamburger.innerHTML = `<i class="fa-solid fa-xmark"></i>`
     }
 })

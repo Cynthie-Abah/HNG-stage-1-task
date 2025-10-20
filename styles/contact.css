@@ -1,0 +1,162 @@
+.contact-page-container{
+    position: relative;
+}
+main {
+  width: 100%;
+  padding: 1.2rem;
+  padding-top: .5rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.contact-card{
+   max-width: 900px;
+  min-height: auto;
+  background: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+.contact-card h2{
+  font-size: .6rem;
+  text-align: center;
+  line-height: 1rem;
+  font-family: "BBH Sans Bartle", sans-serif;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-bottom: .6rem;
+}
+.input-div label{
+    font-size: .7rem;
+    font-family: monospace;
+}
+.input-div input, .input-div textarea{
+    background: transparent;
+    outline: none;
+    border: solid 1.5px #ff0;
+    padding: .5rem 1rem;
+    border-radius: 1.4rem;
+    color: #fff;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.input-div input:focus, .input-div textarea:focus{
+    border-color: #555;
+}
+ .submit-button{
+    width: 100%;
+    padding: .6rem;
+    border: none;
+    border-radius: 1.5rem;
+    background: #ff0;
+    color: #000;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    font-family: monospace;
+    margin-top: 1rem;
+}
+.submit-button:hover{
+    background: #e6e600;
+    color: #111;
+}
+.error-msg {
+  font-size: 75%;
+  color: #cf0000;
+  font-family: "Share Tech Mono", monospace;
+}
+.notification {
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: .8rem;
+  border-radius: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  right: 1rem;
+  box-shadow: 0 4px 20px #555 ;
+  border-bottom: 5px solid #1b6c2e;
+  z-index: 500;
+}
+.show-notification {
+  display: block;
+  animation: fadeInOut 4s forwards;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@media (min-width: 668px) {
+.contact-card{
+   max-width: 600px;
+   padding: 1rem 3rem;
+  gap: 1.6rem;
+}
+.contact-card h2{
+  font-size: .8rem;
+}
+.input-div{
+    padding-bottom: 1rem;
+}
+.input-div label{
+    font-size: .9rem;
+}
+.input-div input, .input-div textarea{
+    padding: .7rem 1rem;
+    font-size: .9rem;
+}
+.notification {
+  max-width: 400px;
+}
+}
+@media (min-width: 968px) {
+.contact-card{
+   max-width: 900px;
+   padding: 2rem 5rem;
+}
+.contact-card h2{
+  font-size: 1rem;
+}
+.notification {
+  max-width: 500px;
+}
+ .submit-button{
+    padding: .8rem;
+    font-size: 1rem;
+}
+}

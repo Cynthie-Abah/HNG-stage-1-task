@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cynthia’s Profile</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/header.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    rel="preload" 
+    as="style" 
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Share+Tech+Mono&display=swap"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc90519a09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contact-page-container">
+        <p class="notification" role="alert" data-testid="test-contact-success" aria-live="polite">
+            Your Message has been successfully submitted!
+        </p>
+    <header>
+    <!-- DESKTOP VIEW -->
+        <div class="desk-nav-bar">
+            <h1 class="name"><a href="/index.html">Cynthia's Profile</a></h1>
+            <ul>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./contact.html">Contact me</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav-bar">
+            <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <nav id="mobile-nav-div">
+            <h1 class="name"><a href="/index.html">Cynthia's Profile</a></h1>
+            <ul>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="contact-card">
+           <h2>Reach out for further enquiries</h2>
+            
+            <form 
+            method="POST"
+            class="contact-form"
+            novalidate
+            >
+            <div class="input-div">
+                <label for="name">Full Name <span style="color: rgb(207, 95, 95);">*</span></label>
+                <input 
+                data-testid="test-contact-name" 
+                aria-describedby="name-error" 
+                type="text" 
+                id="name" 
+                name="name" 
+                required>
+                <span class="error-msg" role="alert" data-testid="test-contact-error-name" id="name-error"></span>
+            </div>
+            <div class="input-div">
+                <label for="email">Email <span style="color: rgb(207, 95, 95);">*</span></label>
+                <input 
+                aria-describedby="email-error"  
+                data-testid="test-contact-email" 
+                type="email" 
+                id="email" 
+                name="email" 
+                required>
+                <span class="error-msg" role="alert" data-testid="test-contact-error-email" id="email-error"></span>
+            </div>
+            <div class="input-div">
+                <label for="subject">Subject <span style="color: rgb(207, 95, 95);">*</span></label>
+                <input 
+                aria-describedby="subject-error" 
+                data-testid="test-contact-subject" 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                required>
+                <span class="error-msg" role="alert" data-testid="test-contact-error-subject" id="subject-error"></span>
+            </div>
+            <div class="input-div"> 
+                <label for="message">Message <span style="color: rgb(207, 95, 95);">*</span></label>
+                <textarea
+                id="message" 
+                name="message" 
+                rows="5" 
+                required
+                maxlength="500"
+                minlength="10"
+                aria-describedby="message-error"
+                data-testid="test-contact-message"
+                ></textarea>
+                <span class="error-msg" role="alert" data-testid="test-contact-error-message" id="message-error"></span>
+            </div>
+
+                <button class="submit-button" type="submit" data-testid="test-contact-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    </div>
+    
+   
+
+     <script src="../js/contact.js"></script>
+     <script src="../main.js"></script>
+</body>
+</html>

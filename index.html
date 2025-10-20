@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cynthia’s Profile</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,79 +19,107 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="">
 
-    <article class="profile-card" data-testid="test-profile-card">
-
-        <div class="info-box">
-                <!--AVATAR -->
-        <figure class="avatar">
-            <img data-testid="test-user-avatar" src="avatar.jpeg" alt="Cynthia Abah">
-            <button class="edit-icon"><i class="fa-solid fa-pencil"></i></button>
-            <input type="file" class="avatar-input" hidden accept="image/*">
-        </figure>
-
-            <!-- INFO -->
-        <div class="info">
-            <h2 class="name" aria-label="Cynthia Abah Name" data-testid="test-user-name">Cynthia Abah</h2>
-            <p class="bio" data-testid="test-user-bio">
-                Software Engineer passionate about creating accessible and user-friendly tech solutions. I love working with modern technologies and contributing to open-source projects.
-            </p>
-        </div>
-        
-        </div>
-
-        <div class="time-box">
-            <!-- current time in milliseconds -->
-            <div class="time" id="time" data-testid="test-user-time">TIME: 12121112322</div>
-
-            <!-- SOCIAL LINKS -->
-             <nav>
-                <ul class="socials" data-testid="test-user-social-links">
-                <li data-testid="test-user-social-linkedin">
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/cynthia-abah/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a> 
-                </li>
-                
-                <li data-testid="test-user-social-tiktok">
-                    <a rel="noopener noreferrer" href="https://www.tiktok.com/@cynthia_ao?t=ZS-90bsTy2vkPt&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                </li>
-
-                <li data-testid="test-user-social-instagram">
-                   <a rel="noopener noreferrer" href="https://www.instagram.com/cynthie_ao?igsh=MTNwYXlldTlyNWd3dw%3D%&utm_-source=qr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a> 
-                </li>
-            </ul>
-             </nav>
-        </div>
-        
-        <!-- HOBBIES-->
-        <section data-testid="test-user-hobbies">
-            <h3>Hobbies</h3>
+        <header>
+            <!-- DESKTOP VIEW -->
+        <div class="desk-nav-bar">
+            <h1 class="name"><a href="/index.html">Cynthia's Profile</a></h1>
             <ul>
-                <li>Reading</li>
-                 <li>coding</li>
-                <li>exploring</li>
-                <li>Taking walks</li>
-                <li>Crotcheting</li>
+                <li><a href="/pages/about.html">About me</a></li>
+                <li><a href="/pages/contact.html">Contact me</a></li>
             </ul>
-        </section>
+        </div>
 
-        <!-- DISLIKES  -->
-        <section data-testid="test-user-dislikes">
-            <h3>dislikes</h3>
+        <div class="mobile-nav-bar">
+            <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <nav id="mobile-nav-div">
+            <h1 class="name"><a href="/index.html">Cynthia's Profile</a></h1>
             <ul>
-                <li>Traffic Jam</li>
-                <li>Poorly Documented codes </li>
-                <li>washing</li>
+                <li><a href="/pages/about.html">About me</a></li>
+                <li><a href="/pages/contact.html">Contact me</a></li>
             </ul>
-        </section>  
+        </nav>
+        </div>
+        </header>
 
-    </article> 
+
+        <main class="hero">
+
+        <article class="profile-card" data-testid="test-profile-card">
+
+            <div class="info-box">
+                    <!--AVATAR -->
+            <figure class="avatar">
+                <img data-testid="test-user-avatar" src="./assets/avatar.jpeg" alt="Cynthia Abah">
+                <button class="edit-icon"><i class="fa-solid fa-pencil"></i></button>
+                <input type="file" class="avatar-input" hidden accept="image/*">
+            </figure>
+
+                <!-- INFO -->
+            <div class="info">
+                <h2 class="name" aria-label="Cynthia Abah Name" data-testid="test-user-name">Cynthia Abah</h2>
+                <p class="bio" data-testid="test-user-bio">
+                    Software Engineer passionate about creating accessible and user-friendly tech solutions. I love working with modern technologies and contributing to open-source projects.
+                </p>
+            </div>
+            
+            </div>
+
+            <div class="time-box">
+                <!-- current time in milliseconds -->
+                <time class="time" id="time" data-testid="test-user-time">TIME: 12121112322</time>
+
+                <!-- SOCIAL LINKS -->
+                <nav>
+                    <ul class="socials" data-testid="test-user-social-links">
+                    <li data-testid="test-user-social-linkedin">
+                        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/cynthia-abah/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a> 
+                    </li>
+                    
+                    <li data-testid="test-user-social-tiktok">
+                        <a rel="noopener noreferrer" href="https://www.tiktok.com/@cynthia_ao?t=ZS-90bsTy2vkPt&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+
+                    <li data-testid="test-user-social-instagram">
+                    <a rel="noopener noreferrer" href="https://www.instagram.com/cynthie_ao?igsh=MTNwYXlldTlyNWd3dw%3D%&utm_-source=qr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a> 
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            
+            <!-- HOBBIES-->
+            <section data-testid="test-user-hobbies">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>coding</li>
+                    <li>exploring</li>
+                    <li>Taking walks</li>
+                    <li>Crotcheting</li>
+                </ul>
+            </section>
+
+            <!-- DISLIKES  -->
+            <section data-testid="test-user-dislikes">
+                <h3>dislikes</h3>
+                <ul>
+                    <li>Traffic Jam</li>
+                    <li>Poorly Documented codes </li>
+                    <li>washing</li>
+                </ul>
+            </section>  
+
+        </article> 
+
+        </main>
 
     </div>
 
     <script src="main.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 </html>
 
