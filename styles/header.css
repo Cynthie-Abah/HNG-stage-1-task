@@ -59,8 +59,9 @@ body {
     padding: .2rem .4rem;
     background: #00000066;
     color: #fff;
-    border-color: #fff;
+    border: 2px solid #fff;
     font-size: .8rem;
+    outline: none;
 }
 .mobile-nav-style .name{
   text-align: center;
