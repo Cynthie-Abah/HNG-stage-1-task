@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="../styles/header.css">
 
+    <link rel="prefetch" href="../index.html">
+<link rel="prefetch" href="../pages/contact.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
@@ -30,7 +33,7 @@
         </div>
         <!-- mobile view -->
         <div class="mobile-nav-bar">
-            <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <button id="hamburger" aria-label="Open navigation menu"><i aria-hidden="true" class="fa-solid fa-bars"></i></button>
             <nav id="mobile-nav-div">
             <h1 class="name"><a href="/index.html">Cynthia's Profile</a></h1>
             <ul>
@@ -48,17 +51,23 @@
            <h2>About Cynthia</h2>
             <section data-testid="test-about-bio" class="bio-section dark">
                 <h3>Bio</h3>
-              <p class="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium incidunt, quidem exercitationem doloremque corrupti aliquam perspiciatis non, sapiente animi totam maxime optio quos sunt minima asperiores facilis laborum perferendis reiciendis. Quo vel quaerat doloremque necessitatibus rem cumque soluta aliquid omnis consequuntur. Aperiam officiis distinctio asperiores modi mollitia illum omnis iure!</p>  
+              <p class="bio">
+                Cynthia Abah is a <strong>Software Engineer</strong> with primary interest in <strong>web development</strong>. 
+                She currently works with modern technologies like <strong>React</strong>, <strong>Next.js</strong>, and <strong>Tailwind CSS</strong> to build intuitive and responsive web applications. 
+                Cynthia is also exploring <strong>backend development basics</strong> with Node.js and Django, authentication systems, and APIs to strengthen her understanding of scalable software design.
+                <br><br>
+                As a Health Enthusiast with a strong analytical mindset, she brings a problem-solving approach rooted in structure, empathy, and precision. 
+                Her long-term goal is to merge technology and healthcare through innovative software solutions that improve access, efficiency, and user experience.
+              </p>  
             </section>
 
            <section data-testid="test-about-goals" class="goal-section light">
             <h3>Her Goals in the HNG program</h3>
             <ul>
-                <li><i class="fa-solid fa-bullseye"></i> to stuff thr stodf asf siiind acdd to stuff thr stodf asf siiind acdd</li>
-                <li><i class="fa-solid fa-bullseye"></i> to stuff thr stodf asf siiind acdd</li>
-                <li><i class="fa-solid fa-bullseye"></i> to stuff thr stodf asf siiind acdd</li>
-                <li><i class="fa-solid fa-bullseye"></i> to stuff thr stodf asf siiind acdd</li>
-                <li><i class="fa-solid fa-bullseye"></i> to stuff thr stodf asf siiind acdd</li>
+                <li><i aria-hidden="true" class="fa-solid fa-bullseye"></i>To further her understanding of <strong>software engineering principles</strong> beyond frontend development.</li>
+                <li><i aria-hidden="true" class="fa-solid fa-bullseye"></i>To collaborate with teams, contribute to real-world projects, and grow through mentorship.</li>
+                <li><i aria-hidden="true" class="fa-solid fa-bullseye"></i>To gain mentorship and real-world project experience.</li>
+                <li><i aria-hidden="true" class="fa-solid fa-bullseye"></i>To make an impact by contributing to projects with similar goals and visions </li>
             </ul>
            </section>
 
@@ -66,22 +75,24 @@
             <h3>Areas of low confidence</h3> <!-- make it into a progress bar  -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, non?</p>
             <ul>
-                <li>Dancing (40%) <span class="progress-bar"> <span class="progress"> </span></span></li>
-                <li>backend (40%) <span class="progress-bar"> <span class="progress"> </span> </span></li>
-                <li>DevOps (40%) <span class="progress-bar"> <span class="progress"> </span> </span></li>
-                <li>AI/Maching Language (40%) <span class="progress-bar"> <span class="progress"> </span> </span></li>
-                <li>LLM training (40%) <span class="progress-bar"> <span class="progress"> </span> </span></li>
+                <li>Backend Development (40%) <span class="progress-bar"> <span class="progress"> </span></span></li>
+                <li>Database Management (35%) <span class="progress-bar"> <span class="progress" style="width: 35%;"> </span> </span></li>
+                <li>DevOps & CI/CD (20%) <span class="progress-bar"> <span class="progress" style="width: 20%;"> </span> </span></li>
+                <li>Systems Design (10%) <span class="progress-bar"> <span class="progress" style="width: 10%;"> </span> </span></li>
+                <!-- <li>LLM training (40%) <span class="progress-bar"> <span class="progress" style="width: 40%;"> </span> </span></li> -->
             </ul>
            </section>
 
         <section class="light" data-testid="test-about-future-note">
         <h3>notes to future self</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem explicabo enim quibusdam inventore unde officiis eaque exercitationem, animi reiciendis adipisci ipsam qui dolores maxime iusto, necessitatibus incidunt deleniti iste placeat a! Voluptas facere eius accusamus perspiciatis quas exercitationem accusantium, blanditiis, eligendi voluptates eos ipsam, quae dicta? Architecto, alias dolorem!</p>
+        <p>Keep building even when it feels uncomfortable. Every error message and late-night debug session 
+        is making you a better engineer. Remember to complete every project you start and stay curious about how systems work under the hood. 
+        The goal isn’t just to write software, but to <strong>solve real problems</strong> through it.</p>
         </section>
 
         <section class="dark" data-testid="test-about-extra">
             <h3>Extra thoughts </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia blanditiis dolorem eos aspernatur praesentium, eveniet omnis nisi cum provident repellendus dolores quasi qui architecto id, quaerat harum numquam fugit eaque minima veniam. Quisquam, esse quas repellendus ducimus doloribus, incidunt sed quae quidem ratione consequuntur cum accusantium beatae rerum maiores nobis.</p>
+            <p>Cynthia's love for creating started early. As a kid, she would spend hours in her brother’s room designing random projects in PowerPoint and playing around with envanto not knowing she was laying the foundation for her journey into the tech industry. She has remained a curious mind, always eager to learn and upgrade at any opportunity she gets and that curiousity has led and would continue to lead her to the path of greatness</p>
         </section>
             
         </article>
